@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useState } from "react";
 import { FormattedMessage, IntlProvider } from "react-intl"
 import Select from 'react-select'
 
@@ -26,13 +26,13 @@ type SelectedOption = { readonly value: "ru"; readonly label: "Русский"; 
 export const App = () => {
   const [currentLocaleId, setCurrentLocaleId] = useState<'ru' | 'en'>(localeIds[0]);
   const currentLocaleMessages = localeMessages[currentLocaleId];
-  const handleCurrentLocaleChange = (selectedOption: SelectedOption | null) => {
-    selectedOption && setCurrentLocaleId(selectedOption.value)
-  }
   return (
-    <IntlProvider key={currentLocaleId} locale={currentLocaleId} messages={currentLocaleMessages}>
-      <Select options={localeSelectOptions} onChange={handleCurrentLocaleChange} value={localeSelectOptions[currentLocaleId === 'ru' ? 0 : 1]}/>
-      <FormattedMessage id='localizedString1' />
-    </IntlProvider>
+    <div>
+      <button onClick={() => {setCurrentLocaleId('ru')}}>ru</button>
+      <button onClick={() => {setCurrentLocaleId('en')}}>en</button>
+      <IntlProvider key={currentLocaleId} locale={currentLocaleId} messages={currentLocaleMessages}>
+        <FormattedMessage id='localizedString1' />
+      </IntlProvider>
+    </div>
   )
 }
