@@ -15,7 +15,7 @@ export const App = () => {
       <button onClick={() => {setCurrentLocaleId('ru')}}>ru</button>
       <button onClick={() => {setCurrentLocaleId('en')}}>en</button>
       <IntlProvider key={currentLocaleId} locale={currentLocaleId} messages={currentLocaleMessages}>
-        <FormattedMessage id='localizedString1' />
+        <FormattedMessage id='localizedString1' defaultMessage='default localized string' />
       </IntlProvider>
     </div>
   )
