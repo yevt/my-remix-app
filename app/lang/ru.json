@@ -1,3 +1,8 @@
 {
-    "localizedString1": "Локализованная строка 1123"
+    "localizedString1": {
+        "defaultMessage": "Локализованная строка 1"
+    },
+    "localizedString2": {
+        "defaultMessage": "Локализованная строка 2"
+    }
 }
