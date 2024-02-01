@@ -1,3 +1,8 @@
 {
-    "localizedString1": "Localized string 1123"
+    "localizedString1": {
+        "defaultMessage": "Localized String 1"
+    },
+    "localizedString2": {
+        "defaultMessage": "Default Localized String 2"
+    }
 }
