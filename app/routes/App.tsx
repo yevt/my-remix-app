@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FormattedMessage, IntlProvider } from "react-intl"
-import ruLocaleMessages from '../lang/ru.json'
-import enLocaleMessages from '../lang/en.json'
+import ruLocaleMessages from '../lang/compiled/ru.json'
+import enLocaleMessages from '../lang/compiled/en.json'
 
 const localeIds = ['ru', 'en'] as const;
 
