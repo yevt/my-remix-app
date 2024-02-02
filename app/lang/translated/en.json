@@ -4,5 +4,8 @@
     },
     "localizedString2": {
         "defaultMessage": "Default Localized String 2"
+    },
+    "localizedString3": {
+        "defaultMessage": "default localized string 3"
     }
 }
