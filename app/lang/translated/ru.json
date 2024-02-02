@@ -4,5 +4,8 @@
     },
     "localizedString2": {
         "defaultMessage": "Локализованная строка 2"
+    },
+    "localizedString3": {
+        "defaultMessage": "Локализованная строка 3"
     }
 }
