@@ -17,6 +17,7 @@ export const App = () => {
       <IntlProvider key={currentLocaleId} locale={currentLocaleId} messages={currentLocaleMessages}>
         <FormattedMessage id='localizedString1' defaultMessage='default localized string' />
         <FormattedMessage id='localizedString2' defaultMessage='default localized string 2' />
+        <FormattedMessage id='localizedString3' defaultMessage='default localized string 3' />
       </IntlProvider>
     </div>
   )
