@@ -1,3 +1,10 @@
+# Экстракция базовой локали
+formatjs extract 'app/**/*.ts*' --ignore='**/*.d.ts' --out-file app/lang/extracted.json
+
+# Компиляция переведенных локалей
+for file in app/lang/translated/*; (F=`basename $file`; formatjs compile $file --out-file app/lang/compiled/$F);
+
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
