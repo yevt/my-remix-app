@@ -9,6 +9,31 @@ for file in app/lang/translated/*; (F=`basename $file`; formatjs compile $file -
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
